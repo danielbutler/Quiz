@@ -8,7 +8,7 @@ Quiz.prototype.add = function(question) {
 };
 
 Quiz.prototype.renderInElement = function(list) {
-  list.innerHTML = "";
+  list.innerHTML = "'<h1>Awesome Quiz</h1>";
   for (var i = 0; i < this.questions.length; i++) {
     list.innerHTML += this.questions[i].toHTML();
   }
