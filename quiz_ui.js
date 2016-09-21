@@ -1,11 +1,9 @@
-var guess0Button = document.getElementById("guess0");
-guess0Button.onclick = function() {
+guess0.onclick = function() {
   console.log("Guess 0 clicked!")
   // playlist.play();
   // playlist.renderInElement(playlistElement);
 }
 
-var guess1Button = document.getElementById("guess1");
-guess1Button.onclick = function() {
+guess1.onclick = function() {
   console.log("Guess 1 clicked!")
 }
