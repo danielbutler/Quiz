@@ -1,14 +1,6 @@
-function Questions(question, answer1, answer2) {
-  // Media.call(this, title, duration);
+function Question(question, answerZero, answerOne, correctAnswer) {
   this.question = question;
-  this.answer1 = answer1;
-  this.answer2 = answer2;
+  this.answerZero = answerZero;
+  this.answerOne = answerOne;
+  this.correctAnswer = correctAnswer;
 }
-
-// Questions.prototype = Object.create(Media.prototype);
-
-var htmlString;
-Questions.prototype.toHTML = function() {
-  htmlString += '';
-  return htmlString;
-};

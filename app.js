@@ -1,18 +1,21 @@
-var questions = new Quiz();
+var quiz = new Quiz();
 
-var firstQuestion = new Questions("Question 1", "Answer 1", "Answer 2");
-var secondQuestion = new Questions("Question 2", "Answer 1", "Answer 2");
+var questionZero = new Question("What is your name?", "Daniel", "Alfred");
+var questionOne = new Question("What is your state?", "Kentucky", "Not Kentucky");
 
-questions.add(firstQuestion);
-questions.add(secondQuestion);
+quiz.add(questionZero);
+quiz.add(questionOne);
 
-var quizElement = document.getElementById("quiz");
-var questionElement = document.getElementById("question");
-var score = document.getElementById("score");
-var choice0 = document.getElementById("choice0");
-var choice1 = document.getElementById("choice1");
-var guess0 = document.getElementById("guess0");
-var guess1 = document.getElementById("guess1");
-var progress = document.getElementById("progress");
+var quizElement = document.getElementById("question");
 
-questions.renderInElement(quizElement);
+quiz.renderInElement(quizElement);
+
+var answerZeroButton = document.getElementById("guess0")
+answerZeroButton.onclick = function() {
+
+};
+
+var answerOneButton = document.getElementById("guess1")
+answerOneButton.onclick = function() {
+
+};
